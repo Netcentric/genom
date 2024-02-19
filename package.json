@@ -27,5 +27,9 @@
     "eslint-plugin-import": "2.29.1",
     "stylelint": "16.1.0",
     "stylelint-config-standard": "36.0.0"
+  },
+  "dependencies": {
+    "edge-delivery-web-component": "file:../edge-delivery-web-component",
+    "temp-edge-delivery-web-component": "^0.0.4"
   }
 }
