@@ -8,7 +8,6 @@ export class Hero extends HTMLElement {
     css.rel = 'stylesheet';
     css.onload = () => {
       this.shadowRoot.append(...this.children);
-      console.log('hero loaded');
       if (this.onComponentComplete) this.onComponentComplete(this);
     };
     css.href = import.meta.url.replace('.js', '.css');
