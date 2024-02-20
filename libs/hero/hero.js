@@ -1,5 +1,3 @@
-import curryDecorator from '../../libs/curry-decorate/curry-decorate.js';
-
 export class Hero extends HTMLElement {
   constructor() {
     super();
@@ -13,5 +11,3 @@ export class Hero extends HTMLElement {
     this.shadowRoot.append(...this.children);
   }
 }
-
-export default curryDecorator('raqn-hero', Hero);
