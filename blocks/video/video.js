@@ -1,2 +1,2 @@
-import decorate from '/libs/blocks/eddys-video/eddys-video';
+import decorate from '/libs/blocks/eddys-video/eddys-video.js';
 

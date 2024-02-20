@@ -1,1 +1,5 @@
-@import "/libs/blocks/eddys-video/eddys-video.css";
+@import url("/libs/blocks/eddys-video/eddys-video.css");
+
+.video {
+    color: red;
+}
