@@ -7,12 +7,14 @@ function setupElement(elementName, block) {
   return block;
 }
 
-export default function curryDecorator(elementName, contructor, async = false) {
+export default function customElementsDecorate(
+  elementName,
+  contructor,
+  async = false,
+) {
   return async function decorate(block) {
-    block.parentElement.parentElement.style.opacity = 0;
     return new Promise((resolve) => {
       block.onComponentComplete = (el) => {
-        el.parentElement.parentElement.style.opacity = 1;
         resolve(el);
       };
       if (customElements.get(elementName)) {
