@@ -9,5 +9,6 @@ export class Hero extends HTMLElement {
       '.css',
     )}">`;
     this.shadowRoot.append(...this.children);
+    if (this.onComponentComplete) this.onComponentComplete(this);
   }
 }
