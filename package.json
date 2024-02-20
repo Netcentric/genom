@@ -29,7 +29,7 @@
     "stylelint-config-standard": "36.0.0"
   },
   "dependencies": {
-    "temp-edge-delivery-hero-component": "^0.0.7",
+    "temp-edge-delivery-hero-component": "^0.0.8",
     "temp-edge-delivery-web-component": "^0.0.7"
   }
 }
