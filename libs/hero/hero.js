@@ -4,11 +4,14 @@ export class Hero extends HTMLElement {
     this.attachShadow({ mode: 'open' });
   }
   connectedCallback() {
-    this.shadowRoot.innerHTML = `<link rel="stylesheet" href="${import.meta.url.replace(
-      '.js',
-      '.css',
-    )}">`;
-    this.shadowRoot.append(...this.children);
-    if (this.onComponentComplete) this.onComponentComplete(this);
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.onload = () => {
+      this.shadowRoot.append(...this.children);
+      console.log('hero loaded');
+      if (this.onComponentComplete) this.onComponentComplete(this);
+    };
+    css.href = import.meta.url.replace('.js', '.css');
+    this.shadowRoot.append(css);
   }
 }
