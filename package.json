@@ -29,6 +29,6 @@
     "stylelint-config-standard": "36.0.0"
   },
   "dependencies": {
-    "@netcentric/eddys-video": "^1.0.6"
+    "@netcentric/eddys-video": "^1.0.10"
   }
 }
