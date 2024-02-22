@@ -1,0 +1,63 @@
+:host {
+  display: grid;
+  position: relative;
+  padding: 32px;
+  min-height: 300px;
+}
+
+:host h1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: var(--heading-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+h1 {
+  font-size: var(--heading-font-size-xxl);
+}
+h2 {
+  font-size: var(--heading-font-size-xl);
+}
+h3 {
+  font-size: var(--heading-font-size-l);
+}
+h4 {
+  font-size: var(--heading-font-size-m);
+}
+h5 {
+  font-size: var(--heading-font-size-s);
+}
+h6 {
+  font-size: var(--heading-font-size-xs);
+}
+
+:host picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+:host img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

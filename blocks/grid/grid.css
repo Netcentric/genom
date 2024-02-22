@@ -1,0 +1,12 @@
+eddys-grid {
+  display: grid;
+  position: relative;
+  grid-template-columns: var(--grid-template-columns, 1fr);
+  gap: var(--scope-gap, 20px);
+  padding: var(--scope-padding, 20px 0);
+}
+eddys-grid > div {
+  position: relative;
+  background: var(--scope-inner-background, transparent);
+  padding: var(--scope-inner-padding, 20px);
+}
