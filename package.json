@@ -29,7 +29,7 @@
     "stylelint-config-standard": "36.0.0"
   },
   "dependencies": {
-    "@netcentric/eddys-video": "^1.0.10",
-    "@netcentric/eddys-custom-element": "^1.0.1"
+    "@netcentric/eddys-custom-element": "^1.2.0",
+    "@netcentric/eddys-video": "^1.0.10"
   }
 }
