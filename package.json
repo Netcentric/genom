@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@netcentric/eddys-custom-element": "^1.3.0",
+    "@netcentric/eddys-form": "^1.0.0",
     "@netcentric/eddys-video": "^1.0.10"
   }
 }
