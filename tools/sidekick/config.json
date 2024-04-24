@@ -1,0 +1,13 @@
+{
+  "project": "Genom",
+  "host": "www.mydomain.prod",
+  "plugins": [{
+    "id": "assets-picker",
+    "title": "Assets Picker",
+    "isPalette": true,
+    "passConfig": true,
+    "passReferrer": true,
+    "url": "/tools/sidekick/assets-picker.html",
+    "paletteRect": "top: 49px; left: 0px; width: auto; right: 0;"
+  }]
+}
